@@ -1,0 +1,7 @@
+dataset,bronze_records,silver_records,quarantine_rule_violations
+lab_results,828,820,8
+protocol_deviations,52,52,0
+sites,20,20,0
+studies,2,2,0
+subjects,277,274,3
+visits,1087,1058,37

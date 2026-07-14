@@ -1,20 +1,19 @@
-# Python
+# Python virtual environment and caches
 .venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
 
-# Secrets and environment settings
-.env
-*.key
-*.pem
-
-# Data and generated outputs
-data/raw/
-data/processed/
+# Local runtime outputs; regenerate from pipeline scripts
 outputs/
+data/raw/
 
-# IDE and OS files
+# Editor and OS files
 .vscode/
 .idea/
 .DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.streamlit/secrets.toml

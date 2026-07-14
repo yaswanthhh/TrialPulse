@@ -1,20 +1,120 @@
-# TrialPulse Lakehouse
+# TrialPulse
 
-An AWS and Databricks lakehouse project for synthetic clinical-trial operations data.
+**TrialPulse** is a clinical-trial operations analytics platform built with Python, Pandas, DuckDB, Parquet, and Streamlit.
 
-The pipeline incrementally ingests raw operational data from Amazon S3, applies PySpark validation and quarantine rules, and publishes curated Delta tables for trial enrolment, site performance, visit compliance, and data-quality reporting.
+It demonstrates a production-inspired **Bronze → Silver → Gold** data architecture using entirely synthetic clinical-operations data.
 
-## Planned stack
+> This project uses synthetic data only. It is not intended for patient care, clinical decision-making, or regulated use.
 
-- AWS S3
-- Databricks on AWS
-- PySpark
-- Delta Lake
-- Databricks Auto Loader
-- Databricks Lakeflow Jobs
-- Databricks SQL
-- Python and GitHub
+## Dashboard
 
-## Disclaimer
+The Streamlit dashboard provides:
 
-This educational portfolio project uses synthetic, non-identifiable data only. It demonstrates audit-oriented metadata, lineage-aware architecture, and data-quality controls; it is not a validated GxP or regulated clinical system.
+- Study enrolment progress versus plan
+- Site-level operational risk ranking
+- Completed, missed, and overdue visit compliance
+- Data-quality audit metrics across pipeline layers
+
+## Architecture
+
+```text
+Synthetic CSV files
+        |
+        v
+Bronze: Raw Parquet + DuckDB tables
+        |
+        v
+Silver: Validated datasets + quarantine records
+        |
+        v
+Gold: Dashboard-ready reporting tables
+        |
+        v
+Streamlit clinical-operations dashboard
+```
+
+## Data quality controls
+
+The Silver layer applies these controls:
+
+- Subject foreign-key validation against sites
+- Visit and laboratory foreign-key validation against subjects
+- Duplicate subject detection
+- Late-arriving visit prioritisation and visit deduplication
+- Configurable 3-day early clinical-visit window
+- Lab-status validation
+- Quarantine records with explicit failure rules
+
+## Technology
+
+- Python
+- Pandas
+- DuckDB
+- PyArrow / Parquet
+- Streamlit
+- Plotly
+
+## Local setup
+
+```powershell
+git clone <YOUR-REPOSITORY-URL>
+cd TrialPulse
+
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+pip install -r requirements.txt
+```
+
+## Run the pipeline
+
+Run the layers in order:
+
+```powershell
+python src\bronze_ingestion.py
+python src\silver_validation.py
+python src\gold_reporting.py
+```
+
+## Run the dashboard
+
+```powershell
+streamlit run app\dashboard.py
+```
+
+Then open `http://localhost:8501`.
+
+## Project structure
+
+```text
+TrialPulse/
+├── app/
+│   └── dashboard.py
+├── data/
+│   └── demo/                  # Versioned synthetic Gold CSVs for deployment
+├── outputs/                   # Local generated artifacts, ignored by Git
+├── src/
+│   ├── bronze_ingestion.py
+│   ├── silver_validation.py
+│   └── gold_reporting.py
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+## Example results
+
+| Metric | Result |
+|---|---:|
+| Bronze visits ingested | 1,087 |
+| Silver visits validated | 1,058 |
+| Quarantine rule violations | 48 |
+| Studies monitored | 2 |
+| Sites monitored | 20 |
+
+## Portfolio talking points
+
+- Built a reproducible medallion-style analytics pipeline for clinical-trial operations data.
+- Implemented validation, foreign-key checks, configurable visit-window logic, late-arrival handling, and quarantined rule violations.
+- Created Gold-layer enrolment, visit-compliance, site-risk, and data-quality reporting models.
+- Delivered an interactive Streamlit dashboard backed by synthetic, version-controlled demo data.

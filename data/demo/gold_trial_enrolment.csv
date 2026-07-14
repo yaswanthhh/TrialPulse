@@ -1,0 +1,3 @@
+study_id,study_name,therapeutic_area,phase,planned_enrolment,enrolled_subjects,active_subjects,completed_subjects,withdrawn_subjects,screen_failed_subjects,enrolment_progress_pct
+TP-CAR-002,CardioPulse Phase III,Cardiovascular,Phase III,240,127,42,28,13,30,52.9
+TP-ONC-001,OncoPulse Phase II,Oncology,Phase II,180,147,58,29,9,34,81.7
