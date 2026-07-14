@@ -6,6 +6,8 @@ It demonstrates a production-inspired **Bronze → Silver → Gold** data archit
 
 > This project uses synthetic data only. It is not intended for patient care, clinical decision-making, or regulated use.
 
+**Live dashboard:** https://trialpulse.streamlit.app
+
 ## Dashboard
 
 The Streamlit dashboard provides:
