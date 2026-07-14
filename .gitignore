@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets and environment settings
+.env
+*.key
+*.pem
+
+# Data and generated outputs
+data/raw/
+data/processed/
+outputs/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
