@@ -1,0 +1,11 @@
+site_id,study_id,country,region,target_enrolment,activation_date,site_status
+TP-ONC-001-SITE-001,TP-ONC-001,Sweden,Nordics,18,2025-02-24,active
+TP-ONC-001-SITE-002,TP-ONC-001,Denmark,DACH,18,2025-01-30,active
+TP-ONC-001-SITE-003,TP-ONC-001,United Kingdom,Nordics,18,2025-02-27,pending_activation
+TP-ONC-001-SITE-004,TP-ONC-001,Sweden,Nordics,18,2025-01-17,active
+TP-ONC-001-SITE-005,TP-ONC-001,United Kingdom,Nordics,18,2025-01-29,active
+TP-ONC-001-SITE-006,TP-ONC-001,United Kingdom,United Kingdom,18,2025-03-01,active
+TP-ONC-001-SITE-007,TP-ONC-001,United Kingdom,Benelux,18,2025-02-12,active
+TP-ONC-001-SITE-008,TP-ONC-001,Denmark,United Kingdom,18,2025-03-04,active
+TP-ONC-001-SITE-009,TP-ONC-001,Denmark,DACH,18,2025-02-01,active
+TP-ONC-001-SITE-010,TP-ONC-001,Sweden,United Kingdom,18,2025-01-21,active

@@ -1,0 +1,11 @@
+deviation_id,site_id,study_id,category,reported_date,deviation_status
+DEV-00001,TP-ONC-001-SITE-001,TP-ONC-001,procedure_error,2025-11-24,closed
+DEV-00002,TP-ONC-001-SITE-001,TP-ONC-001,out_of_window,2025-08-25,under_review
+DEV-00003,TP-ONC-001-SITE-001,TP-ONC-001,informed_consent,2025-04-15,under_review
+DEV-00004,TP-ONC-001-SITE-001,TP-ONC-001,out_of_window,2025-09-04,under_review
+DEV-00005,TP-ONC-001-SITE-001,TP-ONC-001,out_of_window,2025-05-19,under_review
+DEV-00006,TP-ONC-001-SITE-004,TP-ONC-001,informed_consent,2025-08-24,under_review
+DEV-00007,TP-ONC-001-SITE-004,TP-ONC-001,procedure_error,2025-11-29,open
+DEV-00008,TP-ONC-001-SITE-004,TP-ONC-001,procedure_error,2025-10-31,under_review
+DEV-00009,TP-ONC-001-SITE-004,TP-ONC-001,missed_visit,2025-10-07,under_review
+DEV-00010,TP-ONC-001-SITE-005,TP-ONC-001,informed_consent,2025-03-04,closed

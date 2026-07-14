@@ -1,0 +1,11 @@
+subject_id,site_id,study_id,consent_date,subject_status,age_band,sex
+SUBJ-00001,TP-ONC-001-SITE-001,TP-ONC-001,2025-08-20,completed,50-64,female
+SUBJ-00002,TP-ONC-001-SITE-001,TP-ONC-001,2025-04-24,screen_failed,50-64,male
+SUBJ-00003,TP-ONC-001-SITE-001,TP-ONC-001,2025-05-04,screening,50-64,female
+SUBJ-00004,TP-ONC-001-SITE-001,TP-ONC-001,2025-08-11,active,65+,female
+SUBJ-00005,,TP-ONC-001,2025-05-03,active,50-64,not_reported
+SUBJ-00006,TP-ONC-001-SITE-001,TP-ONC-001,2025-07-24,active,65+,male
+SUBJ-00007,TP-ONC-001-SITE-001,TP-ONC-001,2025-04-22,screen_failed,35-49,not_reported
+SUBJ-00008,TP-ONC-001-SITE-001,TP-ONC-001,2025-07-01,screening,18-34,female
+SUBJ-00009,TP-ONC-001-SITE-001,TP-ONC-001,2025-04-05,completed,65+,not_reported
+SUBJ-00010,TP-ONC-001-SITE-001,TP-ONC-001,2025-03-13,active,65+,not_reported
